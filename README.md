@@ -38,6 +38,13 @@ Mobile and desktop versions of the screens are also available - desktop screens 
 
 ![](sample_desktopComp.png)
 
+### Demo
+Here is a link to a responsive demo in HTML + CSS + bits of JS that displays either day/night based on machine local time while generating random (day/night) foreground elements onLoad:
+
+More info in lock-up is available in the Figma guide. The idea is to have a container for all elements that allows them to be always centered ont the screen and using those constraints to position the children within.
+
+You can find the HTML/CSS files inside the 'demo' folder.
+
 ### Responsive Lockup
 - The graphic (both mobile and desktop versions) should always be centered
 - mobile logo `centered`, `width: 80px;`, `margin-top:16px;` 
