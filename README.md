@@ -8,7 +8,7 @@
 
 [Brand/Style Guide Figma](https://www.figma.com/file/4wdEvfIvzTlMbllb39Wrnc/Honeypot.money_Branding?node-id=41%3A0)
 
-[Demo - Day + Night, Foreground Elements Composition](demo/index.html)
+[Demo - Day + Night, Foreground Elements Composition](https://supersecretbanana.com/honeypot/demo/)
 
 ![](Style_Guide.png)
 
@@ -41,7 +41,7 @@ Mobile and desktop versions of the screens are also available - desktop screens 
 ![](sample_desktopComp.png)
 
 ### Demo
-[Here](demo/index.html) is a link to a responsive demo in HTML + CSS + bits of JS that gets hour and either displays day/night graphics:
+[Here](https://supersecretbanana.com/honeypot/demo/) is a link to a responsive demo in HTML + CSS + bits of JS that gets hour and either displays day/night graphics:
 
 - get hour
 - if between 6am - 8pm, adds '.morning'
@@ -54,19 +54,19 @@ foreground composition
 - if between 6am - 8pm, uses day array
 - if between 9pm - 5am, uses night array
 
-More info in lock-up is available in the Figma guide. The idea is to have a container for all elements that allows them to be always centered ont the screen and using those constraints to position the children within.
-
-You can find the HTML/CSS files inside the 'demo' folder.
-
-### Responsive Lockup
-- The graphic (both mobile and desktop versions) should always be centered
-- mobile logo `centered`, `width: 80px;`, `margin-top:16px;` 
-- desktop logo `centered`, `width: 100px;`, `margin-top:40px;`
-- mobile graphic `centered`, `width: 280px;`, `margin-top: 100px;`
-- desktop graphic `centered`, `width: 480px;`, `margin-top: 180px;`
+More info in lock-up is available in the Figma guide. You can find the HTML/CSS files inside the 'demo' folder.
 
 ### Day / Night
 Compositions are divided between the day/night graphics (illustration) and an array of day/night foreground elements. My idea is to either show day/night mode based on local time.
+
+```
+let hour = new Date().getHours();
+if (hour >= 6 && hour <= 18) {
+    //load morning graphics + elements
+} else {
+    //load night graphics + elements
+}
+```
 
 ![](Fail_Day.png)
 ![](Fail_Night.png)
