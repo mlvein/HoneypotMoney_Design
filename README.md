@@ -8,6 +8,8 @@
 
 [Brand/Style Guide Figma](https://www.figma.com/file/4wdEvfIvzTlMbllb39Wrnc/Honeypot.money_Branding?node-id=41%3A0)
 
+[Demo - Day + Night, Foreground Elements Composition](demo/index.html)
+
 ![](Style_Guide.png)
 
 ---
@@ -39,7 +41,18 @@ Mobile and desktop versions of the screens are also available - desktop screens 
 ![](sample_desktopComp.png)
 
 ### Demo
-Here is a link to a responsive demo in HTML + CSS + bits of JS that displays either day/night based on machine local time while generating random (day/night) foreground elements onLoad:
+[Here](demo/index.html) is a link to a responsive demo in HTML + CSS + bits of JS that gets hour and either displays day/night graphics:
+
+- get hour
+- if between 6am - 8pm, adds '.morning'
+- if between 9pm - 5am, adds '.night'
+
+foreground composition
+- each side will have one 'flower', 'plant', and 'grass'
+- an array is listed for left and right versions flowers, plants, and grass
+- element is randomly chosen from each
+- if between 6am - 8pm, uses day array
+- if between 9pm - 5am, uses night array
 
 More info in lock-up is available in the Figma guide. The idea is to have a container for all elements that allows them to be always centered ont the screen and using those constraints to position the children within.
 

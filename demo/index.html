@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Delius&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <title>Demo - Honeypot.Money Assembly</title>
+    <link rel="shortcut icon" type="image/jpg" href="../assets/favicon.png"/>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="logo" >
+            <img src="../assets/logo.svg" alt="HoneyPot.Money"> 
+        </div>
+        
+        <div id="graphic" class="">
+            <h2>Campaign</h2>
+            <div id="leftFlower" class="foreground"></div>
+            <div id="rightFlower" class="foreground"></div>
+            <div id="leftPlant" class="foreground"></div>
+            <div id="rightPlant" class="foreground"></div>
+            <div id="leftGrass" class="foreground"></div>
+            <div id="rightGrass" class="foreground"></div>
+        </div>
+
+        <div class="nav">
+            <div class="btn home">back</div>
+            <div class="btn help">help</div>
+        </div>
+
+    </div>
+
+    <script>
+        
+        function timeOfDay() {
+        let hour = new Date().getHours();
+        if (hour >= 6 && hour <= 18) {
+
+            let leftFlower = [" left-flower-01", " left-flower-02", " left-flower-03"];
+            let rightFlower = [" right-flower-01", " right-flower-02", " right-flower-03"];
+            let leftPlant = [" left-plant-01", " left-plant-02", " left-plant-03"];
+            let rightPlant = [" right-plant-01", " right-plant-02", " right-plant-03"];
+            let leftGrass = [" left-grass-01", " left-grass-02", " left-grass-03", " left-grass-04", " left-grass-05"];
+            let rightGrass = [" right-grass-01", " right-grass-02", " right-grass-03", " right-grass-04", " right-grass-05"];
+
+            let randomLeftFlower = leftFlower[Math.floor(Math.random()*leftFlower.length)];
+            let randomRightFlower = rightFlower[Math.floor(Math.random()*rightFlower.length)];
+            let randomLeftPlant = leftPlant[Math.floor(Math.random()*leftPlant.length)];
+            let randomRightPlant = rightPlant[Math.floor(Math.random()*rightPlant.length)];
+            let randomLeftGrass = leftGrass[Math.floor(Math.random()*leftGrass.length)];
+            let randomRightGrass = rightGrass[Math.floor(Math.random()*rightGrass.length)];
+
+            document.getElementById("graphic").className = "morning";
+            document.getElementById("leftFlower").className += randomLeftFlower;
+            document.getElementById("rightFlower").className += randomRightFlower;
+            document.getElementById("leftPlant").className += randomLeftPlant;
+            document.getElementById("rightPlant").className += randomRightPlant;
+            document.getElementById("leftGrass").className += randomLeftGrass;
+            document.getElementById("rightGrass").className += randomRightGrass;
+            // console.log('load morning graphics');
+            return 'morning';
+        }
+        else {
+
+            let leftShroom = [" left-shroom-01", " left-shroom-02"];
+            let rightShroom = [" right-shroom-01", " right-shroom-02"];
+            let leftFungi = [" left-fungus-01", " left-fungus-02"];
+            let rightFungi = [" right-fungus-01", " right-fungus-02"];
+            let leftNightGrass = [" left-night-grass-01", " left-night-grass-02"];
+            let rightNightGrass = [" right-night-grass-01", " right-night-grass-02"];
+            
+            let randomLeftShroom = leftShroom[Math.floor(Math.random()*leftShroom.length)];
+            let randomRightShroom = rightShroom[Math.floor(Math.random()*rightShroom.length)];
+            let randomLeftFungi = leftFungi[Math.floor(Math.random()*leftFungi.length)];
+            let randomRightFungi = rightFungi[Math.floor(Math.random()*rightFungi.length)];
+            let randomLeftNightGrass = leftNightGrass[Math.floor(Math.random()*leftNightGrass.length)];
+            let randomRightNightGrass = rightNightGrass[Math.floor(Math.random()*rightNightGrass.length)];
+
+            document.getElementById("graphic").className = "night";
+            document.getElementById("leftFlower").className += randomLeftShroom;
+            document.getElementById("rightFlower").className += randomRightShroom;
+            document.getElementById("leftPlant").className += randomLeftFungi;
+            document.getElementById("rightPlant").className += randomRightFungi;
+            document.getElementById("leftGrass").className += randomLeftNightGrass;
+            document.getElementById("rightGrass").className += randomRightNightGrass;
+            // console.log('load night graphics');
+            return 'night';}
+        }
+
+        console.log(`Good ${timeOfDay()}!`);
+        
+    </script>
+    
+</body>
+</html>
