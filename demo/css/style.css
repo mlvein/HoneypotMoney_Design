@@ -9,6 +9,7 @@
     /*gradient bg for components*/
     --gr-night: linear-gradient(180deg, rgba(35, 51, 69, 0.96) 0%, rgba(16, 36, 58, 0.96) 100%);
     --gr-day: linear-gradient(180deg, rgba(254, 252, 244, 0.96) 0%, rgba(255, 246, 235, 0.96) 100%);
+    --gr-day-hover: linear-gradient(180deg, rgba(254, 252, 244, 1) 0%, rgba(255, 246, 235, 1) 100%);
 
     /*foreground elements url*/
 
@@ -65,7 +66,7 @@
 body {
     height: 100vh;
     width: 100%;
-    background: linear-gradient(180deg, #35525F 0%, #43606C 13.85%);
+    background: linear-gradient(180deg, #35525F 0%, #43606C 10%);
 }
 
 .container {
@@ -79,15 +80,42 @@ body {
 
 .logo {
     position: relative;
-    top: -30px;
+    /* top: -30px; */
     /* text-align: center; */
     align-self: flex-start;
     margin: 0 auto;
 }
 
+h1 {
+    font-family: var(--header);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+    .info {
+        padding-top: 16px;
+    }
+
+    .campaign-head {
+        border-bottom: 1px solid var(--day-orange);
+        padding-bottom: 14px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .campaign-head>h1>span {
+        font-family: var(--header);
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .campaign-desc {
+        padding-top: 14px;
+    }
+
 h2 {
     position: relative;
-    top: -20px;
+    /* top: -20px; */
     font-family: var(--header);
     font-size: 16px;
     color: var(--white);
@@ -98,6 +126,36 @@ h2 {
     font-weight: 400;
     margin: 0 auto;
 }
+
+p {
+    font-family: var(--copy);
+    font-size: 14px;
+}
+
+    #campaign {
+        width: 260px;
+        height: 100px;
+        position: relative;
+        margin: 0 auto;
+        top: 40px;
+        cursor: pointer;
+    }
+
+        .day {
+            background: var(--gr-day);
+            border: 2px solid var(--day-orange);
+            border-radius: 4px;
+        }
+
+            .day:hover {
+                background: var(--gr-day-hover);
+            }
+
+        .info {
+            width: 216px;
+            position: relative;
+            margin: 0 auto
+        }
 
 #graphic {
     position: relative;
@@ -392,6 +450,14 @@ h2 {
     h2 {
         width: 480px;
     }
+
+    #campaign {
+        width: 400px;
+    }
+
+        .info {
+            width: 360px;
+        }
 
     #graphic {
         top: -8px;
