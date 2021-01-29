@@ -19,11 +19,11 @@
         
         <div id="graphic" class="">
             <h2>Campaign</h2>
-            <div id="campaign" class="day">
+            <div id="campaign" class="day-mode">
                 <div class="info">
-                    <div class="campaign-head">
+                    <div id="campaignHead" class="day-mode">
                         <h1>0.1 <span>ETH</span></h1>
-                        <img src="../assets/logo_brightID_black.png" alt="BrightID_white">
+                        <div id="brightId" class="brightId-black"></div>
                     </div>
                     <div class="campaign-desc">
                         <p>+ For new BrightID verified users</p>
@@ -39,8 +39,8 @@
         </div>
 
         <div class="nav">
-            <div class="btn home">back</div>
-            <div class="btn help">help</div>
+            <div id="btnBack" class="back-day"></div>
+            <div id="btnHelp" class="help-day"></div>
         </div>
 
     </div>
@@ -66,12 +66,17 @@
             let randomRightGrass = rightGrass[Math.floor(Math.random()*rightGrass.length)];
 
             document.getElementById("graphic").className = "morning";
+            document.getElementById("campaign").className = "day-mode";
+            document.getElementById("campaignHead").className = "day-campaign";
+            document.getElementById("brightId").className = "brightId-black";
             document.getElementById("leftFlower").className += randomLeftFlower;
             document.getElementById("rightFlower").className += randomRightFlower;
             document.getElementById("leftPlant").className += randomLeftPlant;
             document.getElementById("rightPlant").className += randomRightPlant;
             document.getElementById("leftGrass").className += randomLeftGrass;
             document.getElementById("rightGrass").className += randomRightGrass;
+            document.getElementById("btnBack").className = "back-day";
+            document.getElementById("btnHelp").className = "help-day";
             // console.log('load morning graphics');
             return 'morning';
         }
@@ -92,12 +97,17 @@
             let randomRightNightGrass = rightNightGrass[Math.floor(Math.random()*rightNightGrass.length)];
 
             document.getElementById("graphic").className = "night";
+            document.getElementById("campaign").className = "night-mode";
+            document.getElementById("campaignHead").className = "night-campaign";
+            document.getElementById("brightId").className = "brightId-white";
             document.getElementById("leftFlower").className += randomLeftShroom;
             document.getElementById("rightFlower").className += randomRightShroom;
             document.getElementById("leftPlant").className += randomLeftFungi;
             document.getElementById("rightPlant").className += randomRightFungi;
             document.getElementById("leftGrass").className += randomLeftNightGrass;
             document.getElementById("rightGrass").className += randomRightNightGrass;
+            document.getElementById("btnBack").className = "back-night";
+            document.getElementById("btnHelp").className = "help-night";
             // console.log('load night graphics');
             return 'night';}
         }

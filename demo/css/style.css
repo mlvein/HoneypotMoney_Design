@@ -8,6 +8,7 @@
 
     /*gradient bg for components*/
     --gr-night: linear-gradient(180deg, rgba(35, 51, 69, 0.96) 0%, rgba(16, 36, 58, 0.96) 100%);
+    --gr-night-hover: linear-gradient(180deg, rgba(35, 51, 69, 1) 0%, rgba(16, 36, 58, 1) 100%);
     --gr-day: linear-gradient(180deg, rgba(254, 252, 244, 0.96) 0%, rgba(255, 246, 235, 0.96) 100%);
     --gr-day-hover: linear-gradient(180deg, rgba(254, 252, 244, 1) 0%, rgba(255, 246, 235, 1) 100%);
 
@@ -96,14 +97,33 @@ h1 {
         padding-top: 16px;
     }
 
-    .campaign-head {
-        border-bottom: 1px solid var(--day-orange);
+    #campaignHead {
         padding-bottom: 14px;
         display: flex;
         justify-content: space-between;
     }
 
-    .campaign-head>h1>span {
+        .day-campaign {
+            border-bottom: 1px solid var(--day-orange);
+        }
+
+        .night-campaign {
+            border-bottom: 1px solid var(--night-yellow);
+        }
+
+        .brightId-black {
+            background-image: url(../../assets/logo_brightID_black.png);
+            height: 20px;
+            width: 73px;
+        }
+
+        .brightId-white {
+            background-image: url(../../assets/logo_brightID_white.png);
+            height: 20px;
+            width: 73px;
+        }
+
+    #campaignHead>h1>span {
         font-family: var(--header);
         font-weight: 400;
         font-size: 16px;
@@ -141,14 +161,25 @@ p {
         cursor: pointer;
     }
 
-        .day {
+        .day-mode {
             background: var(--gr-day);
             border: 2px solid var(--day-orange);
             border-radius: 4px;
         }
 
-            .day:hover {
+            .day-mode:hover {
                 background: var(--gr-day-hover);
+            }
+
+        .night-mode {
+            background: var(--gr-night);
+            border: 2px solid var(--night-yellow);
+            border-radius: 4px;
+            color: var(--white);
+        }
+
+            .night-mode:hover {
+                background: var(--gr-night-hover);
             }
 
         .info {
@@ -190,6 +221,40 @@ p {
         color: white;
         border-radius: 4px;
     }
+
+        #btnBack {
+            position: relative;
+            top: 8px;
+            left: 20px;
+        }
+
+            .back-day {
+                background-image: url(../../assets/back_day.svg);
+                width: 74px;
+                height: 36px;
+            }
+
+            .back-night {
+                background-image: url(../../assets/back_night.svg);
+                width: 74px;
+                height: 36px;
+            }
+
+        #btnHelp {
+            position: relative;
+            top: 8px;
+            right: 20px;
+            height: 36px;
+            width: 36px;
+        }
+
+        .help-day {
+            background-image: url(../../assets/help_day.svg);
+        }
+
+        .help-night {
+            background-image: url(../../assets/help_night.svg);
+        }
 
 .home {
     left: 20px;
@@ -473,11 +538,11 @@ p {
             background-image: url(../../graphics/campaign_desktop_night.svg);
         }
 
-    .home {
+    #btnBack {
         left: 0px;
     }
     
-    .help {
+    #btnHelp {
         right: 0px;
     }
 
