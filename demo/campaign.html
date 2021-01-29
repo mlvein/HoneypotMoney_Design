@@ -19,6 +19,12 @@
         
         <div id="graphic" class="">
             <h2>Campaign</h2>
+            <div id="leftFlower" class="foreground"></div>
+            <div id="rightFlower" class="foreground"></div>
+            <div id="leftPlant" class="foreground"></div>
+            <div id="rightPlant" class="foreground"></div>
+            <div id="leftGrass" class="foreground"></div>
+            <div id="rightGrass" class="foreground"></div>
             <div id="campaign" class="day-mode">
                 <div class="info">
                     <div id="campaignHead" class="day-mode">
@@ -30,12 +36,6 @@
                     </div>
                 </div>
             </div>
-            <div id="leftFlower" class="foreground"></div>
-            <div id="rightFlower" class="foreground"></div>
-            <div id="leftPlant" class="foreground"></div>
-            <div id="rightPlant" class="foreground"></div>
-            <div id="leftGrass" class="foreground"></div>
-            <div id="rightGrass" class="foreground"></div>
         </div>
 
         <div class="nav">
@@ -113,6 +113,10 @@
         }
 
         console.log(`Good ${timeOfDay()}!`);
+
+        document.getElementById("campaign").onclick = function expandCampaign() {
+            document.getElementById("campaign").className += " expand";
+        }
         
     </script>
     

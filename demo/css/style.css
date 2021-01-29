@@ -161,6 +161,11 @@ p {
         cursor: pointer;
     }
 
+        .expand {
+            height: 300px !important;
+            transition: height 0.5s ease-in-out;
+        }
+
         .day-mode {
             background: var(--gr-day);
             border: 2px solid var(--day-orange);
@@ -228,6 +233,10 @@ p {
             left: 20px;
         }
 
+        #btnBack:hover {
+            cursor: pointer;
+        }
+
             .back-day {
                 background-image: url(../../assets/back_day.svg);
                 width: 74px;
@@ -247,6 +256,11 @@ p {
             height: 36px;
             width: 36px;
         }
+
+        #btnHelp:hover {
+            cursor: pointer;
+        }
+
 
         .help-day {
             background-image: url(../../assets/help_day.svg);
@@ -519,6 +533,11 @@ p {
     #campaign {
         width: 400px;
     }
+
+        .expand {
+            height: 360px !important;
+            transition: height 0.5s ease-in-out;
+        }
 
         .info {
             width: 360px;
