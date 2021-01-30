@@ -12,6 +12,13 @@
     --gr-day: linear-gradient(180deg, rgba(254, 252, 244, 0.96) 0%, rgba(255, 246, 235, 0.96) 100%);
     --gr-day-hover: linear-gradient(180deg, rgba(254, 252, 244, 1) 0%, rgba(255, 246, 235, 1) 100%);
 
+    /*honeypot-graphics*/
+
+    --honeypot-mobile-day: url(../../assets/honeypot_mobile_day.svg);
+    --honeypot-mobile-night: url(../../assets/honeypot_mobile_night.svg);
+    --honeypot-desktop-day: url(../../assets/honeypot_desktop_day.svg);
+    --honeypot-desktop-night: url(../../assets/honeypot_desktop_night.svg);
+
     /*foreground elements url*/
 
     --flower01-l: url(../../foreground_elements/day_flower01_l.svg);
@@ -64,6 +71,8 @@
     margin: 0px;
 }
 
+.hidden {display: none}
+
 body {
     height: 100vh;
     width: 100%;
@@ -104,11 +113,11 @@ h1 {
     }
 
         .day-campaign {
-            border-bottom: 1px solid var(--day-orange);
+            border-top: 1px solid var(--day-orange);
         }
 
         .night-campaign {
-            border-bottom: 1px solid var(--night-yellow);
+            border-top: 1px solid var(--night-yellow);
         }
 
         .brightId-black {
@@ -129,7 +138,25 @@ h1 {
         font-size: 16px;
     }
 
-    .campaign-desc {
+    #honeyPot {
+        position: relative;
+        margin: 0 auto;
+        top: 0px;
+    }
+
+        .honeypot-day {
+            background-image: var(--honeypot-mobile-day);
+            height: 148px;
+            width: 148px;
+        }
+
+        .honeypot-night {
+            background-image: var(--honeypot-mobile-night);
+            height: 148px;
+            width: 148px;
+        }
+
+    #campaignDesc {
         padding-top: 14px;
     }
 
@@ -154,7 +181,7 @@ p {
 
     #campaign {
         width: 260px;
-        height: 100px;
+        /* height: 100px; */
         position: relative;
         margin: 0 auto;
         top: 40px;
@@ -162,8 +189,13 @@ p {
     }
 
         .expand {
-            height: 300px !important;
-            transition: height 0.5s ease-in-out;
+            height: 300px;
+            transition: height 0.1s ease-in-out;
+        }
+
+        .collapse {
+            height: 100px;
+            transition: height 0.1s ease-in-out;
         }
 
         .day-mode {
@@ -207,6 +239,15 @@ p {
     .night {
         background-image: url(../../graphics/campaign_mobile_night.svg);
     }
+
+#btnPickUp {
+    background-image: url(../../assets/btn_pickup.svg);
+    position: relative;
+    height: 40px;
+    width: 181px;
+    margin: 0 auto;
+    bottom: -16px;
+}
 
 .nav {
     width: 100%;
@@ -535,8 +576,8 @@ p {
     }
 
         .expand {
-            height: 360px !important;
-            transition: height 0.5s ease-in-out;
+            height: 360px;
+            transition: height 0.1s ease-in-out;
         }
 
         .info {
@@ -556,6 +597,22 @@ p {
         .night {
             background-image: url(../../graphics/campaign_desktop_night.svg);
         }
+
+    /* #honeyPot {
+        top: 40px;
+    } */
+
+    .honeypot-day {
+        background-image: var(--honeypot-desktop-day);
+        height: 200px;
+        width: 200px;
+    }
+
+    .honeypot-night {
+        background-image: var(--honeypot-desktop-night);
+        height: 200px;
+        width: 200px;
+    }
 
     #btnBack {
         left: 0px;
