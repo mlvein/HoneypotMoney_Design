@@ -71,7 +71,8 @@
     margin: 0px;
 }
 
-.hidden {display: none}
+.hidden {display: none;}
+.invisible {visibility: hidden;}
 
 body {
     height: 100vh;

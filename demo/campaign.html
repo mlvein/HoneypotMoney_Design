@@ -41,7 +41,7 @@
         </div>
 
         <div class="nav">
-            <div id="btnBack" class="invisible back-day"></div>
+            <div id="btnBack" class="invisible"></div>
             <div id="btnHelp" class="help-day"></div>
         </div>
 
@@ -77,7 +77,6 @@
             document.getElementById("rightPlant").className += randomRightPlant;
             document.getElementById("leftGrass").className += randomLeftGrass;
             document.getElementById("rightGrass").className += randomRightGrass;
-            document.getElementById("btnBack").className = "back-day";
             document.getElementById("btnHelp").className = "help-day";
             document.getElementById("honeyPot").className += " honeypot-day";
             // console.log('load morning graphics');
@@ -110,7 +109,6 @@
             document.getElementById("rightPlant").className += randomRightFungi;
             document.getElementById("leftGrass").className += randomLeftNightGrass;
             document.getElementById("rightGrass").className += randomRightNightGrass;
-            document.getElementById("btnBack").className = "back-night";
             document.getElementById("btnHelp").className = "help-night";
             document.getElementById("honeyPot").className += " honeypot-night";
             // console.log('load night graphics');
@@ -121,6 +119,8 @@
 
 
         document.getElementById("campaign").onclick = function expandCampaign() {
+            document.getElementById("btnBack").classList.remove = "invisible";
+            document.getElementById("btnBack").className = "back-" + `${timeOfDay()}`;
             document.getElementById("campaign").className = `${timeOfDay()}` + "-mode expand";
             document.getElementById("honeyPot").style.cssText = "display: block;";
             document.getElementById("btnPickUp").style.cssText = "display: block;";
@@ -130,6 +130,7 @@
             document.getElementById("campaign").className = `${timeOfDay()}` + "-mode collapse";
             document.getElementById("honeyPot").style.cssText = "display: none;";
             document.getElementById("btnPickUp").style.cssText = "display: none;";
+            document.getElementById("btnBack").className = "invisible";
         }
         
     </script>
