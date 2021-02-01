@@ -8,7 +8,7 @@
 
 [Brand/Style Guide Figma](https://www.figma.com/file/4wdEvfIvzTlMbllb39Wrnc/Honeypot.money_Branding?node-id=41%3A0)
 
-Also, here are demo links showing showing how the randomized foreground composition and day/night graphics work (refresh page to get new compositions or change your machine's clock to 6am or earlier to check night/day) [^1] :
+Also, here are demo links showing showing how the randomized foreground composition and day/night graphics work (refresh page to get new compositions or change your machine's clock to 6am or earlier to check night/day) [^1]
 
 [Demo - Day + Night, Foreground Elements Composition](https://supersecretbanana.com/honeypot/demo/)
 
@@ -22,7 +22,7 @@ Demo - Success
 
 Demo - Fail
 
-[^1]: My HTML/CSS/JS skills are limited so feel free to optimize the code! 
+[^1] My HTML/CSS/JS skills are limited so feel free to optimize the code! 
 
 ---
 ## Assets and Graphics
