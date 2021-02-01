@@ -11,6 +11,7 @@
     --gr-night-hover: linear-gradient(180deg, rgba(35, 51, 69, 1) 0%, rgba(16, 36, 58, 1) 100%);
     --gr-day: linear-gradient(180deg, rgba(254, 252, 244, 0.96) 0%, rgba(255, 246, 235, 0.96) 100%);
     --gr-day-hover: linear-gradient(180deg, rgba(254, 252, 244, 1) 0%, rgba(255, 246, 235, 1) 100%);
+    --gr-button: linear-gradient(180deg, #FFBF5B 0%, #E97A1C 100%);
 
     /*honeypot-graphics*/
 
@@ -189,10 +190,21 @@ p {
         cursor: pointer;
     }
 
+        .button {
+            padding: 8px 14px;
+            background: var(--gr-button);
+            border-radius: 14px;
+        }
+
         .expand {
             height: 300px;
             transition: height 0.1s ease-in-out;
         }
+
+            .expand-connect {
+                height: 180px;
+                transition: height 0.1s ease-in-out;
+            }
 
         .collapse {
             height: 100px;
@@ -237,8 +249,16 @@ p {
         background-image: url(../../graphics/campaign_mobile_day.svg);
     }
 
+    .connect-morning {
+        background-image: url(../../graphics/connect_mobile_day.svg);
+    }
+
     .night {
         background-image: url(../../graphics/campaign_mobile_night.svg);
+    }
+
+    .connect-night {
+        background-image: url(../../graphics/connect_mobile_night.svg);
     }
 
 #btnPickUp {
@@ -248,6 +268,24 @@ p {
     width: 181px;
     margin: 0 auto;
     bottom: -16px;
+}
+
+#btnConnectWeb3 {
+    background-image: url(../../assets/btn_connect_web3.svg);
+    position: relative;
+    height: 40px;
+    width: 182px;
+    margin: 0 auto;
+    bottom: -16px;
+}
+
+#progressBar {
+    position: relative;
+    height: 8px;
+    width: 216px;
+    background-color: #43606C;
+    border-radius: 4px;
+    top: 50px;
 }
 
 .nav {
@@ -595,8 +633,16 @@ p {
             background-image: url(../../graphics/campaign_desktop_day.svg);          
         }
 
+        .connect-morning {
+            background-image: url(../../graphics/connect_desktop_day.svg);
+        }
+
         .night {
             background-image: url(../../graphics/campaign_desktop_night.svg);
+        }
+
+        .connect-night {
+            background-image: url(../../graphics/connect_desktop_night.svg);
         }
 
     /* #honeyPot {
@@ -613,6 +659,10 @@ p {
         background-image: var(--honeypot-desktop-night);
         height: 200px;
         width: 200px;
+    }
+
+    #progressBar {
+        width: 360px;
     }
 
     #btnBack {
