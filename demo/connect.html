@@ -32,13 +32,16 @@
                         <div id="brightId" class="brightId-black"></div>
                     </div>
                     <div id="btnConnectWeb3"></div>
-                    <div id="progressBar"></div>
+                    <div id="btnConnectBright" class="hidden" onclick="location.href='success.html';"></div>
+                    <div id="progressBar">
+                        <div id="progress"></div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="nav">
-            <div id="btnBack" class="visible back-day"></div>
+            <div id="btnBack" class="visible back-day" onclick="location.href='campaign.html';"></div>
             <div id="btnHelp" class="help-day"></div>
         </div>
 
@@ -112,6 +115,13 @@
 
         document.getElementById("btnBack").classList.add = "back-" + `${timeOfDay()}`;
         console.log(`Good ${timeOfDay()}!`);
+
+        document.getElementById("btnConnectWeb3").onclick = function connectNext() {
+            document.getElementById("btnConnectWeb3").className = "hidden";
+            document.getElementById("btnConnectBright").classList.remove = "hidden";
+            document.getElementById("btnConnectBright").style.cssText = "display: block;";
+            document.getElementById("progress").style.cssText = "width: calc(100%/3*2);"
+        }
         
         // document.getElementById("btnBack").onclick = function collapseCampaign() {
         //     document.getElementById("campaign").className = `${timeOfDay()}` + "-mode collapse";

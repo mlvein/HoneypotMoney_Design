@@ -105,7 +105,7 @@ h1 {
 }
 
     .info {
-        padding-top: 16px;
+        padding: 16px;
     }
 
     #campaignHead {
@@ -232,11 +232,23 @@ p {
                 background: var(--gr-night-hover);
             }
 
+        .status {
+            height: 60px;
+        }
+
         .info {
             width: 216px;
             position: relative;
-            margin: 0 auto
+            margin: 0 auto;
         }
+
+            #status {
+                position: relative;
+                margin: 0 auto;
+                color: var(--day-orange);
+                text-align: center;
+                /* top: 8px; */
+            }
 
 #graphic {
     position: relative;
@@ -253,12 +265,20 @@ p {
         background-image: url(../../graphics/connect_mobile_day.svg);
     }
 
+    .success-morning {
+        background-image: url(../../graphics/success_mobile_day.svg);
+    }
+
     .night {
         background-image: url(../../graphics/campaign_mobile_night.svg);
     }
 
     .connect-night {
         background-image: url(../../graphics/connect_mobile_night.svg);
+    }
+
+    .success-night {
+        background-image: url(../../graphics/success_mobile_night.svg);
     }
 
 #btnPickUp {
@@ -279,6 +299,15 @@ p {
     bottom: -16px;
 }
 
+#btnConnectBright {
+    background-image: url(../../assets/btn_connect_bright.svg);
+    position: relative;
+    height: 40px;
+    width: 212px;
+    margin: 0 auto;
+    bottom: -16px;
+}
+
 #progressBar {
     position: relative;
     height: 8px;
@@ -287,6 +316,16 @@ p {
     border-radius: 4px;
     top: 50px;
 }
+
+    #progress {
+        position: relative;
+        height: 8px;
+        width: calc(100%/3);
+        background-color: var(--night-yellow);
+        border-radius: 4px;
+        transition: width 0.1s ease-in-out;
+
+    }
 
 .nav {
     width: 100%;
@@ -326,6 +365,30 @@ p {
             .back-night {
                 background-image: url(../../assets/back_night.svg);
                 width: 74px;
+                height: 36px;
+            }
+
+            .home-day {
+                background-image: url(../../assets/btn_home.svg);
+                width: 80px;
+                height: 36px;
+            }
+
+            .home-night {
+                background-image: url(../../assets/btn_home_night.svg);
+                width: 80px;
+                height: 36px;
+            }
+
+            .tryAgain-day {
+                background-image: url(../../assets/btn_tryAgain_day.svg);
+                width: 115px;
+                height: 36px;
+            }
+
+            .tryAgain-night {
+                background-image: url(../../assets/btn_tryAgain_night.svg);
+                width: 115px;
                 height: 36px;
             }
 
@@ -612,6 +675,7 @@ p {
 
     #campaign {
         width: 400px;
+        top: 140px;
     }
 
         .expand {
@@ -637,12 +701,20 @@ p {
             background-image: url(../../graphics/connect_desktop_day.svg);
         }
 
+        .success-morning {
+            background-image: url(../../graphics/success_desktop_day.svg);
+        }
+
         .night {
             background-image: url(../../graphics/campaign_desktop_night.svg);
         }
 
         .connect-night {
             background-image: url(../../graphics/connect_desktop_night.svg);
+        }
+
+        .success-night {
+            background-image: url(../../graphics/success_desktop_night.svg);
         }
 
     /* #honeyPot {

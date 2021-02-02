@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Delius&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
-    <title>Demo - Campaign</title>
+    <title>Demo - Success</title>
     <link rel="shortcut icon" type="image/jpg" href="../assets/favicon.png"/>
 </head>
 <body>
@@ -18,30 +18,22 @@
         </div>
         
         <div id="graphic" class="">
-            <h2>Campaign</h2>
+            <h2>Success</h2>
             <div id="leftFlower" class="foreground"></div>
             <div id="rightFlower" class="foreground"></div>
             <div id="leftPlant" class="foreground"></div>
             <div id="rightPlant" class="foreground"></div>
             <div id="leftGrass" class="foreground"></div>
             <div id="rightGrass" class="foreground"></div>
-            <div id="campaign" class="collapse day-mode">
+            <div id="campaign" class="status day-mode">
                 <div class="info">
-                    <div id="campaignHead">
-                        <h1>0.1 <span>ETH</span></h1>
-                        <div id="brightId" class="brightId-black"></div>
-                    </div>
-                    <div id="honeyPot" class="hidden"></div>
-                    <div id="campaignDesc">
-                        <p>+ For new BrightID verified users</p>
-                    </div>
-                    <div id="btnPickUp" class="hidden" onclick="location.href='connect.html';"></div>
+                    <p id="status">Success! Enjoy your honey :)</p>
                 </div>
             </div>
         </div>
 
         <div class="nav">
-            <div id="btnBack" class="invisible"></div>
+            <div id="btnBack" class="visible home-day" onclick="location.href='campaign.html';"></div>
             <div id="btnHelp" class="help-day"></div>
         </div>
 
@@ -67,10 +59,8 @@
             let randomLeftGrass = leftGrass[Math.floor(Math.random()*leftGrass.length)];
             let randomRightGrass = rightGrass[Math.floor(Math.random()*rightGrass.length)];
 
-            document.getElementById("graphic").className = "morning";
-            document.getElementById("campaign").className = "day-mode collapse";
-            document.getElementById("campaignDesc").className = "day-campaign";
-            document.getElementById("brightId").className = "brightId-black";
+            document.getElementById("graphic").className = "success-morning";
+            document.getElementById("campaign").className = "day-mode";
             document.getElementById("leftFlower").className += randomLeftFlower;
             document.getElementById("rightFlower").className += randomRightFlower;
             document.getElementById("leftPlant").className += randomLeftPlant;
@@ -78,10 +68,10 @@
             document.getElementById("leftGrass").className += randomLeftGrass;
             document.getElementById("rightGrass").className += randomRightGrass;
             document.getElementById("btnHelp").className = "help-day";
-            document.getElementById("honeyPot").className += " honeypot-day";
+            document.getElementById("btnBack").className = "home-day";
+            document.getElementById("status").style.cssText = "color: var(--day-orange);";
             // console.log('load morning graphics');
             return 'day';
-
         }
         else {
 
@@ -99,10 +89,8 @@
             let randomLeftNightGrass = leftNightGrass[Math.floor(Math.random()*leftNightGrass.length)];
             let randomRightNightGrass = rightNightGrass[Math.floor(Math.random()*rightNightGrass.length)];
 
-            document.getElementById("graphic").className = "night";
-            document.getElementById("campaign").className = "night-mode collapse";
-            document.getElementById("campaignDesc").className = "night-campaign";
-            document.getElementById("brightId").className = "brightId-white";
+            document.getElementById("graphic").className = "success-night";
+            document.getElementById("campaign").className = "night-mode";
             document.getElementById("leftFlower").className += randomLeftShroom;
             document.getElementById("rightFlower").className += randomRightShroom;
             document.getElementById("leftPlant").className += randomLeftFungi;
@@ -110,28 +98,31 @@
             document.getElementById("leftGrass").className += randomLeftNightGrass;
             document.getElementById("rightGrass").className += randomRightNightGrass;
             document.getElementById("btnHelp").className = "help-night";
-            document.getElementById("honeyPot").className += " honeypot-night";
+            document.getElementById("btnBack").className = "home-night";
+            document.getElementById("status").style.cssText = "color: var(--night-yellow);";
             // console.log('load night graphics');
-            return 'night';}
+            return 'night';
         }
 
+           
+        }
+
+        document.getElementById("btnBack").classList.add = "back-" + `${timeOfDay()}`;
         console.log(`Good ${timeOfDay()}!`);
 
-
-        document.getElementById("campaign").onclick = function expandCampaign() {
-            document.getElementById("btnBack").classList.remove = "invisible";
-            document.getElementById("btnBack").className = "back-" + `${timeOfDay()}`;
-            document.getElementById("campaign").className = `${timeOfDay()}` + "-mode expand";
-            document.getElementById("honeyPot").style.cssText = "display: block;";
-            document.getElementById("btnPickUp").style.cssText = "display: block;";
-        }
-
-        document.getElementById("btnBack").onclick = function collapseCampaign() {
-            document.getElementById("campaign").className = `${timeOfDay()}` + "-mode collapse";
-            document.getElementById("honeyPot").style.cssText = "display: none;";
-            document.getElementById("btnPickUp").style.cssText = "display: none;";
-            document.getElementById("btnBack").className = "invisible";
-        }
+        // document.getElementById("btnConnectWeb3").onclick = function connectNext() {
+        //     document.getElementById("btnConnectWeb3").className = "hidden";
+        //     document.getElementById("btnConnectBright").classList.remove = "hidden";
+        //     document.getElementById("btnConnectBright").style.cssText = "display: block;";
+        //     document.getElementById("progress").style.cssText = "width: calc(100%/3*2);"
+        // }
+        
+        // document.getElementById("btnBack").onclick = function collapseCampaign() {
+        //     document.getElementById("campaign").className = `${timeOfDay()}` + "-mode collapse";
+        //     document.getElementById("honeyPot").style.cssText = "display: none;";
+        //     document.getElementById("btnPickUp").style.cssText = "display: none;";
+        //     document.getElementById("btnBack").className = "invisible";
+        // }
         
     </script>
     
