@@ -237,6 +237,10 @@ p {
             top: 40px;
         }
 
+        .module {
+            top: 40px;
+        }
+
         .info {
             width: 216px;
             position: relative;
@@ -696,6 +700,10 @@ p {
 
         .status {
             top: 140px;
+        }
+
+        .module {
+            top: 80px;
         }
 
         .expand {

@@ -68,7 +68,7 @@
             let randomRightGrass = rightGrass[Math.floor(Math.random()*rightGrass.length)];
 
             document.getElementById("graphic").className = "morning";
-            document.getElementById("campaign").className = "day-mode collapse";
+            document.getElementById("campaign").className = "module day-mode collapse";
             document.getElementById("campaignDesc").className = "day-campaign";
             document.getElementById("brightId").className = "brightId-black";
             document.getElementById("leftFlower").className += randomLeftFlower;
@@ -100,7 +100,7 @@
             let randomRightNightGrass = rightNightGrass[Math.floor(Math.random()*rightNightGrass.length)];
 
             document.getElementById("graphic").className = "night";
-            document.getElementById("campaign").className = "night-mode collapse";
+            document.getElementById("campaign").className = "module night-mode collapse";
             document.getElementById("campaignDesc").className = "night-campaign";
             document.getElementById("brightId").className = "brightId-white";
             document.getElementById("leftFlower").className += randomLeftShroom;
@@ -121,13 +121,13 @@
         document.getElementById("campaign").onclick = function expandCampaign() {
             document.getElementById("btnBack").classList.remove = "invisible";
             document.getElementById("btnBack").className = "back-" + `${timeOfDay()}`;
-            document.getElementById("campaign").className = `${timeOfDay()}` + "-mode expand";
+            document.getElementById("campaign").className = `${timeOfDay()}` + "-mode expand module";
             document.getElementById("honeyPot").style.cssText = "display: block;";
             document.getElementById("btnPickUp").style.cssText = "display: block;";
         }
 
         document.getElementById("btnBack").onclick = function collapseCampaign() {
-            document.getElementById("campaign").className = `${timeOfDay()}` + "-mode collapse";
+            document.getElementById("campaign").className = `${timeOfDay()}` + "-mode collapse module";
             document.getElementById("honeyPot").style.cssText = "display: none;";
             document.getElementById("btnPickUp").style.cssText = "display: none;";
             document.getElementById("btnBack").className = "invisible";

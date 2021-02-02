@@ -12,15 +12,15 @@ Also, here are demo links showing showing how the randomized foreground composit
 
 [Demo - Day + Night, Foreground Elements Composition](https://supersecretbanana.com/honeypot/demo/)
 
-Demo - Campaign
+[Demo - Campaign](https://supersecretbanana.com/honeypot/demo/campaign.html)
 
-Demo - No Campaign / Check Back Later
+[Demo - No Campaign / Check Back Later](https://supersecretbanana.com/honeypot/demo/campaign-none.html)
 
-Demo - Connect
+[Demo - Connect](https://supersecretbanana.com/honeypot/demo/connect.html)
 
-Demo - Success
+[Demo - Success](https://supersecretbanana.com/honeypot/demo/success.html)
 
-Demo - Fail
+[Demo - Fail](https://supersecretbanana.com/honeypot/demo/fail.html)
 
 [^1] My HTML/CSS/JS skills are limited so feel free to optimize the code! 
 
