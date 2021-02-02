@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Delius&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
-    <title>Demo - Uh Oh</title>
+    <title>Demo - No Campaign</title>
     <link rel="shortcut icon" type="image/jpg" href="../assets/favicon.png"/>
 </head>
 <body>
@@ -18,7 +18,7 @@
         </div>
         
         <div id="graphic" class="">
-            <h2>Uh Oh</h2>
+            <h2>Campaigns</h2>
             <div id="leftFlower" class="foreground"></div>
             <div id="rightFlower" class="foreground"></div>
             <div id="leftPlant" class="foreground"></div>
@@ -27,14 +27,17 @@
             <div id="rightGrass" class="foreground"></div>
             <div id="campaign" class="status day-mode">
                 <div class="info">
-                    <p id="status">Oops! Something went wrong :(</p>
+                    <p id="status">
+                        No Active Campaign <br/>
+                        Check back later in 7 Days
+                    </p>
                 </div>
             </div>
         </div>
 
         <div class="nav">
-            <div id="btnBack" class="visible home-day" onclick="location.href='campaign.html';"></div>
-            <div id="btnHelp" class="help-day"></div>
+            <div id="btnBack" class="invisible"></div>
+            <div id="btnHelp" class="invisible help-day"></div>
         </div>
 
     </div>
@@ -59,7 +62,7 @@
             let randomLeftGrass = leftGrass[Math.floor(Math.random()*leftGrass.length)];
             let randomRightGrass = rightGrass[Math.floor(Math.random()*rightGrass.length)];
 
-            document.getElementById("graphic").className = "fail-morning";
+            document.getElementById("graphic").className = "campaign-none-morning";
             document.getElementById("campaign").className = "status day-mode";
             document.getElementById("leftFlower").className += randomLeftFlower;
             document.getElementById("rightFlower").className += randomRightFlower;
@@ -67,8 +70,8 @@
             document.getElementById("rightPlant").className += randomRightPlant;
             document.getElementById("leftGrass").className += randomLeftGrass;
             document.getElementById("rightGrass").className += randomRightGrass;
-            document.getElementById("btnHelp").className = "help-day";
-            document.getElementById("btnBack").className = "tryAgain-day";
+            document.getElementById("btnHelp").className = "invisible";
+            document.getElementById("btnBack").className = "invisible";
             document.getElementById("status").style.cssText = "color: var(--day-orange);";
             // console.log('load morning graphics');
             return 'day';
@@ -89,7 +92,7 @@
             let randomLeftNightGrass = leftNightGrass[Math.floor(Math.random()*leftNightGrass.length)];
             let randomRightNightGrass = rightNightGrass[Math.floor(Math.random()*rightNightGrass.length)];
 
-            document.getElementById("graphic").className = "fail-night";
+            document.getElementById("graphic").className = "campaign-none-night";
             document.getElementById("campaign").className = "status night-mode";
             document.getElementById("leftFlower").className += randomLeftShroom;
             document.getElementById("rightFlower").className += randomRightShroom;
@@ -97,8 +100,8 @@
             document.getElementById("rightPlant").className += randomRightFungi;
             document.getElementById("leftGrass").className += randomLeftNightGrass;
             document.getElementById("rightGrass").className += randomRightNightGrass;
-            document.getElementById("btnHelp").className = "help-night";
-            document.getElementById("btnBack").className = "tryAgain-night";
+            document.getElementById("btnHelp").className = "invisible";
+            document.getElementById("btnBack").className = "invisible";
             document.getElementById("status").style.cssText = "color: var(--night-yellow);";
             // console.log('load night graphics');
             return 'night';

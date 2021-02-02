@@ -186,7 +186,7 @@ p {
         /* height: 100px; */
         position: relative;
         margin: 0 auto;
-        top: 40px;
+        /* top: 40px; */
         cursor: pointer;
     }
 
@@ -233,7 +233,8 @@ p {
             }
 
         .status {
-            height: 60px;
+            /* height: 60px; */
+            top: 40px;
         }
 
         .info {
@@ -269,6 +270,14 @@ p {
         background-image: url(../../graphics/success_mobile_day.svg);
     }
 
+    .fail-morning {
+        background-image: url(../../graphics/fail_mobile_day.svg);
+    }
+
+    .campaign-none-morning {
+        background-image: url(../../graphics/campaign_none_mobile_day.svg);
+    }
+
     .night {
         background-image: url(../../graphics/campaign_mobile_night.svg);
     }
@@ -279,6 +288,14 @@ p {
 
     .success-night {
         background-image: url(../../graphics/success_mobile_night.svg);
+    }
+
+    .fail-night {
+        background-image: url(../../graphics/fail_mobile_night.svg);
+    }
+
+    .campaign-none-night {
+        background-image: url(../../graphics/campaign_none_mobile_night.svg);
     }
 
 #btnPickUp {
@@ -675,8 +692,11 @@ p {
 
     #campaign {
         width: 400px;
-        top: 140px;
     }
+
+        .status {
+            top: 140px;
+        }
 
         .expand {
             height: 360px;
@@ -705,6 +725,14 @@ p {
             background-image: url(../../graphics/success_desktop_day.svg);
         }
 
+        .fail-morning {
+            background-image: url(../../graphics/fail_desktop_day.svg);
+        }
+
+        .campaign-none-morning {
+            background-image: url(../../graphics/campaign_none_desktop_day.svg);
+        }
+
         .night {
             background-image: url(../../graphics/campaign_desktop_night.svg);
         }
@@ -715,6 +743,14 @@ p {
 
         .success-night {
             background-image: url(../../graphics/success_desktop_night.svg);
+        }
+
+        .fail-night {
+            background-image: url(../../graphics/fail_desktop_night.svg);
+        }
+
+        .campaign-none-night {
+            background-image: url(../../graphics/campaign_none_desktop_night.svg);
         }
 
     /* #honeyPot {
