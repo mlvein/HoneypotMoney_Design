@@ -21,6 +21,8 @@
             <h2>Success</h2>
             <div id="leftFlower" class="foreground"></div>
             <div id="rightFlower" class="foreground"></div>
+            <div id="leftInsect" class="foreground"></div>
+            <div id="rightInsect" class="foreground"></div>
             <div id="leftPlant" class="foreground"></div>
             <div id="rightPlant" class="foreground"></div>
             <div id="leftGrass" class="foreground"></div>
@@ -47,6 +49,8 @@
 
             let leftFlower = [" left-flower-01", " left-flower-02", " left-flower-03"];
             let rightFlower = [" right-flower-01", " right-flower-02", " right-flower-03"];
+            let leftInsect = [" left-insect-01", " left-insect-02"];
+            let rightInsect = [" right-insect-01", " right-insect-02"];
             let leftPlant = [" left-plant-01", " left-plant-02", " left-plant-03"];
             let rightPlant = [" right-plant-01", " right-plant-02", " right-plant-03"];
             let leftGrass = [" left-grass-01", " left-grass-02", " left-grass-03", " left-grass-04", " left-grass-05"];
@@ -54,6 +58,8 @@
 
             let randomLeftFlower = leftFlower[Math.floor(Math.random()*leftFlower.length)];
             let randomRightFlower = rightFlower[Math.floor(Math.random()*rightFlower.length)];
+            let randomLeftInsect = leftInsect[Math.floor(Math.random()*leftInsect.length)];
+            let randomRightInsect = rightInsect[Math.floor(Math.random()*rightInsect.length)];
             let randomLeftPlant = leftPlant[Math.floor(Math.random()*leftPlant.length)];
             let randomRightPlant = rightPlant[Math.floor(Math.random()*rightPlant.length)];
             let randomLeftGrass = leftGrass[Math.floor(Math.random()*leftGrass.length)];
@@ -63,6 +69,8 @@
             document.getElementById("campaign").className = "status day-mode";
             document.getElementById("leftFlower").className += randomLeftFlower;
             document.getElementById("rightFlower").className += randomRightFlower;
+            document.getElementById("leftInsect").className += randomLeftInsect;
+            document.getElementById("rightInsect").className += randomRightInsect;
             document.getElementById("leftPlant").className += randomLeftPlant;
             document.getElementById("rightPlant").className += randomRightPlant;
             document.getElementById("leftGrass").className += randomLeftGrass;
@@ -77,6 +85,8 @@
 
             let leftShroom = [" left-shroom-01", " left-shroom-02"];
             let rightShroom = [" right-shroom-01", " right-shroom-02"];
+            let leftInsect = [" left-insect-01", " left-insect-02"];
+            let rightInsect = [" right-insect-01", " right-insect-02"];
             let leftFungi = [" left-fungus-01", " left-fungus-02"];
             let rightFungi = [" right-fungus-01", " right-fungus-02"];
             let leftNightGrass = [" left-night-grass-01", " left-night-grass-02"];
@@ -84,6 +94,8 @@
             
             let randomLeftShroom = leftShroom[Math.floor(Math.random()*leftShroom.length)];
             let randomRightShroom = rightShroom[Math.floor(Math.random()*rightShroom.length)];
+            let randomLeftInsect = leftInsect[Math.floor(Math.random()*leftInsect.length)];
+            let randomRightInsect = rightInsect[Math.floor(Math.random()*rightInsect.length)];
             let randomLeftFungi = leftFungi[Math.floor(Math.random()*leftFungi.length)];
             let randomRightFungi = rightFungi[Math.floor(Math.random()*rightFungi.length)];
             let randomLeftNightGrass = leftNightGrass[Math.floor(Math.random()*leftNightGrass.length)];
@@ -93,6 +105,8 @@
             document.getElementById("campaign").className = "status night-mode";
             document.getElementById("leftFlower").className += randomLeftShroom;
             document.getElementById("rightFlower").className += randomRightShroom;
+            document.getElementById("leftInsect").className += randomLeftInsect;
+            document.getElementById("rightInsect").className += randomRightInsect;
             document.getElementById("leftPlant").className += randomLeftFungi;
             document.getElementById("rightPlant").className += randomRightFungi;
             document.getElementById("leftGrass").className += randomLeftNightGrass;

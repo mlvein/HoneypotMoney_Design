@@ -34,6 +34,11 @@
     --shroom02-l: url(../../foreground_elements/night_shroom02_l.svg);
     --shroom02-r: url(../../foreground_elements/night_shroom02_r.svg);
 
+    --insect01-l: url(../../foreground_elements/day_insect01_l.svg);
+    --insect01-r: url(../../foreground_elements/day_insect01_r.svg);
+    --insect02-l: url(../../foreground_elements/day_insect02_l.svg);
+    --insect02-r: url(../../foreground_elements/day_insect02_r.svg);
+
     --plant01-l: url(../../foreground_elements/day_plant01_l.svg);
     --plant01-r: url(../../foreground_elements/day_plant01_r.svg);
     --plant02-l: url(../../foreground_elements/day_plant02_l.svg);
@@ -515,6 +520,38 @@ p {
         background-image: var(--shroom02-r);
         height: 49px;
         width: 80px;
+    }
+
+#leftInsect {
+    left: 6px;
+}
+
+    .left-insect-01 {
+        background-image: var(--insect01-l);
+        width: 100px;
+        height: 100px;
+    }
+
+    .left-insect-02 {
+        background-image: var(--insect02-l);
+        width: 100px;
+        height: 100px;
+    }
+
+#rightInsect {
+    right: 6px;
+}
+    
+    .right-insect-01 {
+         background-image: var(--insect01-r);
+         width: 100px;
+         height: 100px;
+    }
+    
+    .right-insect-02 {
+        background-image: var(--insect02-r);
+        width: 100px;
+        height: 100px;
     }
 
 #leftPlant{
