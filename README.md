@@ -52,7 +52,7 @@ Mobile and desktop versions of the screens are also available - desktop screens 
 ---
 ## Assembly
 
-![](sample_desktopComp.png)
+![](sample_comp_night.gif)
 
 ### Demo
 [Here](https://supersecretbanana.com/honeypot/demo/) is a link to a responsive demo in HTML + CSS + bits of JS that gets hour and either displays day/night graphics:
