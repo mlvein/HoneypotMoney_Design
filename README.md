@@ -1,4 +1,7 @@
 # HoneypotMoney_Design Guide
+
+![](sample_comp_night.gif)
+
  Hello! This is the Design Guide for Honeypot.money :)
  
  Below are the links to the Figma file where you'll find more of the assets as well as thorough guidelines for them. Let me know if you have any questions / need editing permissions!
@@ -51,8 +54,6 @@ Mobile and desktop versions of the screens are also available - desktop screens 
 
 ---
 ## Assembly
-
-![](sample_comp_night.gif)
 
 ### Demo
 [Here](https://supersecretbanana.com/honeypot/demo/) is a link to a responsive demo in HTML + CSS + bits of JS that gets hour and either displays day/night graphics:
