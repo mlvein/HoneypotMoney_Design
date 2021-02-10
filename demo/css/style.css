@@ -258,6 +258,11 @@ p {
                 color: var(--day-orange);
                 text-align: center;
                 /* top: 8px; */
+                font-family: var(--copy);
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                line-height: 1.8em;
             }
 
 #graphic {
