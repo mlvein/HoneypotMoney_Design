@@ -464,33 +464,38 @@ p {
 }
 
     .left-flower-01 {
-        background-image: var(--flower01-l);
         height: 100px;
         width: 40px;
+        background-image: var(--flower01-l);
+        background-repeat: no-repeat;
     }
 
     .left-flower-02 {
-        background-image: var(--flower02-l);
         height: 100px;
         width: 40px;
+        background-image: var(--flower02-l);
+        background-repeat: no-repeat;
     }
 
     .left-flower-03 {
-        background-image: var(--flower03-l);
         height: 100px;
         width: 40px;
+        background-image: var(--flower03-l);
+        background-repeat: no-repeat;
     }
 
     .left-shroom-01 {
-        background-image: var(--shroom01-l);
         height: 49px;
         width: 80px;
+        background-image: var(--shroom01-l);
+        background-repeat: no-repeat;
     }
 
     .left-shroom-02 {
-        background-image: var(--shroom02-l);
         height: 49px;
         width: 80px;
+        background-image: var(--shroom02-l);
+        background-repeat: no-repeat;
     }
 
 #rightFlower {
@@ -498,33 +503,38 @@ p {
 }
 
     .right-flower-01 {
-        background-image: var(--flower01-r);
         height: 100px;
         width: 40px;
+        background-image: var(--flower01-r);
+        background-repeat: no-repeat;
     }
 
     .right-flower-02 {
-        background-image: var(--flower02-r);
         height: 100px;
         width: 40px;
+        background-image: var(--flower02-r);
+        background-repeat: no-repeat;
     }
 
     .right-flower-03 {
-        background-image: var(--flower03-r);
         height: 100px;
         width: 40px;
+        background-image: var(--flower03-r);
+        background-repeat: no-repeat;
     }
 
     .right-shroom-01 {
-        background-image: var(--shroom01-r);
         height: 49px;
         width: 80px;
+        background-image: var(--shroom01-r);
+        background-repeat: no-repeat;
     }
 
     .right-shroom-02 {
-        background-image: var(--shroom02-r);
         height: 49px;
         width: 80px;
+        background-image: var(--shroom02-r);
+        background-repeat: no-repeat;
     }
 
 #leftInsect {
@@ -532,15 +542,17 @@ p {
 }
 
     .left-insect-01 {
-        background-image: var(--insect01-l);
         width: 100px;
         height: 100px;
+        background-image: var(--insect01-l);
+        background-repeat: no-repeat;
     }
 
     .left-insect-02 {
-        background-image: var(--insect02-l);
         width: 100px;
         height: 100px;
+        background-image: var(--insect02-l);
+        background-repeat: no-repeat;
     }
 
 #rightInsect {
@@ -548,15 +560,17 @@ p {
 }
     
     .right-insect-01 {
-         background-image: var(--insect01-r);
-         width: 100px;
-         height: 100px;
+        width: 100px;
+        height: 100px;
+        background-image: var(--insect01-r);
+        background-repeat: no-repeat; 
     }
     
     .right-insect-02 {
-        background-image: var(--insect02-r);
         width: 100px;
         height: 100px;
+        background-image: var(--insect02-r);
+        background-repeat: no-repeat; 
     }
 
 #leftPlant{
@@ -564,33 +578,38 @@ p {
 }
 
     .left-plant-01 {
-        background-image: var(--plant01-l);
         width: 60px;
         height: 58px;
+        background-image: var(--plant01-l);
+        background-repeat: no-repeat; 
     }
 
     .left-plant-02 {
-        background-image: var(--plant02-l);
         width: 60px;
         height: 80px;
+        background-image: var(--plant02-l);
+        background-repeat: no-repeat; 
     }
 
     .left-plant-03 {
-        background-image: var(--plant03-l);
         width: 60px;
         height: 80px;
+        background-image: var(--plant03-l);
+        background-repeat: no-repeat; 
     }
 
     .left-fungus-01 {
-        background-image: var(--fungus01-l);
         width: 30px;
         height: 27px;
+        background-image: var(--fungus01-l);
+        background-repeat: no-repeat;
     }
 
     .left-fungus-02 {
-        background-image: var(--fungus02-l);
         width: 30px;
         height: 27px;
+        background-image: var(--fungus02-l);
+        background-repeat: no-repeat;
     }
 
 #rightPlant{
@@ -598,33 +617,38 @@ p {
 }
 
     .right-plant-01 {
-        background-image: var(--plant01-r);
         width: 60px;
         height: 58px;
+        background-image: var(--plant01-r);
+        background-repeat: no-repeat;
     }
 
     .right-plant-02 {
-        background-image: var(--plant02-r);
         width: 60px;
         height: 80px;
+        background-image: var(--plant02-r);
+        background-repeat: no-repeat;
     }
 
     .right-plant-03 {
-        background-image: var(--plant03-r);
         width: 60px;
         height: 80px;
+        background-image: var(--plant03-r);
+        background-repeat: no-repeat;
     }
 
     .right-fungus-01 {
-        background-image: var(--fungus01-r);
         width: 30px;
         height: 27px;
+        background-image: var(--fungus01-r);
+        background-repeat: no-repeat;
     }
 
     .right-fungus-02 {
-        background-image: var(--fungus02-r);
         width: 30px;
         height: 27px;
+        background-image: var(--fungus02-r);
+        background-repeat: no-repeat;
     }
 
 
@@ -633,45 +657,52 @@ p {
 }
 
     .left-grass-01 {
-        background-image: var(--grass-01-l);
         width: 60px;
         height: 75px;
+        background-image: var(--grass-01-l);
+        background-repeat: no-repeat;
     }
 
     .left-grass-02 {
-        background-image: var(--grass-02-l);
         width: 58px;
         height: 46px;
+        background-image: var(--grass-02-l);
+        background-repeat: no-repeat;
     }
 
     .left-grass-03 {
-        background-image: var(--grass-03-l);
         width: 80px;
         height: 12px;
+        background-image: var(--grass-03-l);
+        background-repeat: no-repeat;
     }
 
     .left-grass-04 {
-        background-image: var(--grass-04-l);
         width: 120px;
         height: 29px;
+        background-image: var(--grass-04-l);
+        background-repeat: no-repeat;
     }
 
     .left-grass-05 {
-        background-image: var(--grass-05-l);
         width: 120px;
         height: 29px;
+        background-image: var(--grass-05-l);
+        background-repeat: no-repeat;
     }
 
     .left-night-grass-01 {
-        background-image: var(--night-grass-01-l);
         width: 80px;
         height: 12px;
+        background-image: var(--night-grass-01-l);
+        background-repeat: no-repeat;
     }
 
     .left-night-grass-02 {
-        background-image: var(--night-grass-02-l);
         width: 80px;
         height: 12px;
+        background-image: var(--night-grass-02-l);
+        background-repeat: no-repeat;
     }
 
 #rightGrass {
@@ -679,45 +710,52 @@ p {
 }
 
     .right-grass-01 {
-        background-image: var(--grass-01-r);
         width: 60px;
         height: 75px;
+        background-image: var(--grass-01-r);
+        background-repeat: no-repeat;
     }
 
     .right-grass-02 {
-        background-image: var(--grass-02-r);
         width: 58px;
         height: 46px;
+        background-image: var(--grass-02-r);
+        background-repeat: no-repeat;
     }
 
     .right-grass-03 {
-        background-image: var(--grass-03-r);
         width: 80px;
         height: 12px;
+        background-image: var(--grass-03-r);
+        background-repeat: no-repeat;
     }
 
     .right-grass-04 {
-        background-image: var(--grass-04-r);
         width: 120px;
         height: 29px;
+        background-image: var(--grass-04-r);
+        background-repeat: no-repeat;
     }
 
     .right-grass-05 {
-        background-image: var(--grass-05-r);
         width: 120px;
         height: 29px;
+        background-image: var(--grass-05-r);
+        background-repeat: no-repeat;
     }
 
     .right-night-grass-01 {
-        background-image: var(--night-grass-01-r);
         width: 80px;
         height: 12px;
+        background-image: var(--night-grass-01-r);
+        background-repeat: no-repeat;
     }
 
     .right-night-grass-02 {
-        background-image: var(--night-grass-02-r);
         width: 80px;
         height: 12px;
+        background-image: var(--night-grass-02-r);
+        background-repeat: no-repeat;
     }
 
 
