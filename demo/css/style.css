@@ -15,61 +15,61 @@
 
     /*honeypot-graphics*/
 
-    --honeypot-mobile-day: url('../../assets/honeypot_mobile_day.svg');
-    --honeypot-mobile-night: url('../../assets/honeypot_mobile_night.svg');
-    --honeypot-desktop-day: url('../../assets/honeypot_desktop_day.svg');
-    --honeypot-desktop-night: url('../../assets/honeypot_desktop_night.svg');
+    --honeypot-mobile-day: url('https://supersecretbanana.com/honeypot/assets/honeypot_mobile_day.svg');
+    --honeypot-mobile-night: url('https://supersecretbanana.com/honeypot/assets/honeypot_mobile_night.svg');
+    --honeypot-desktop-day: url('https://supersecretbanana.com/honeypot/assets/honeypot_desktop_day.svg');
+    --honeypot-desktop-night: url('https://supersecretbanana.com/honeypot/assets/honeypot_desktop_night.svg');
 
     /*foreground elements url*/
 
-    --flower01-l: url('../../foreground_elements/day_flower01_l.svg');
-    --flower01-r: url('../../foreground_elements/day_flower01_r.svg');
-    --flower02-l: url('../../foreground_elements/day_flower02_l.svg');
-    --flower02-r: url('../../foreground_elements/day_flower02_r.svg');
-    --flower03-l: url('../../foreground_elements/day_flower03_l.svg');
-    --flower03-r: url('../../foreground_elements/day_flower03_r.svg');
+    --flower01-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_flower01_l.svg');
+    --flower01-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_flower01_r.svg');
+    --flower02-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_flower02_l.svg');
+    --flower02-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_flower02_r.svg');
+    --flower03-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_flower03_l.svg');
+    --flower03-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_flower03_r.svg');
 
-    --shroom01-l: url('../../foreground_elements/night_shroom01_l.svg');
-    --shroom01-r: url('../../foreground_elements/night_shroom01_r.svg');
-    --shroom02-l: url('../../foreground_elements/night_shroom02_l.svg');
-    --shroom02-r: url('../../foreground_elements/night_shroom02_r.svg');
+    --shroom01-l: url('https://supersecretbanana.com/honeypot/foreground_elements/night_shroom01_l.svg');
+    --shroom01-r: url('https://supersecretbanana.com/honeypot/foreground_elements/night_shroom01_r.svg');
+    --shroom02-l: url('https://supersecretbanana.com/honeypot/foreground_elements/night_shroom02_l.svg');
+    --shroom02-r: url('https://supersecretbanana.com/honeypot/foreground_elements/night_shroom02_r.svg');
 
-    --insect01-l: url('../../foreground_elements/day_insect01_l.svg');
-    --insect01-r: url('../../foreground_elements/day_insect01_r.svg');
-    --insect02-l: url('../../foreground_elements/day_insect02_l.svg');
-    --insect02-r: url('../../foreground_elements/day_insect02_r.svg');
+    --insect01-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_insect01_l.svg');
+    --insect01-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_insect01_r.svg');
+    --insect02-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_insect02_l.svg');
+    --insect02-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_insect02_r.svg');
 
-    --plant01-l: url('../../foreground_elements/day_plant01_l.svg');
-    --plant01-r: url('../../foreground_elements/day_plant01_r.svg');
-    --plant02-l: url('../../foreground_elements/day_plant02_l.svg');
-    --plant02-r: url('../../foreground_elements/day_plant02_r.svg');
-    --plant03-l: url('../../foreground_elements/day_plant03_l.svg');
-    --plant03-r: url('../../foreground_elements/day_plant03_r.svg');
+    --plant01-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_plant01_l.svg');
+    --plant01-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_plant01_r.svg');
+    --plant02-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_plant02_l.svg');
+    --plant02-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_plant02_r.svg');
+    --plant03-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_plant03_l.svg');
+    --plant03-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_plant03_r.svg');
 
-    --fungus01-l: url('../../foreground_elements/night_fungus01_l.svg');
-    --fungus01-r: url('../../foreground_elements/night_fungus01_r.svg');
-    --fungus02-l: url('../../foreground_elements/night_fungus02_l.svg');
-    --fungus02-r: url('../../foreground_elements/night_fungus02_r.svg');
+    --fungus01-l: url('https://supersecretbanana.com/honeypot/foreground_elements/night_fungus01_l.svg');
+    --fungus01-r: url('https://supersecretbanana.com/honeypot/foreground_elements/night_fungus01_r.svg');
+    --fungus02-l: url('https://supersecretbanana.com/honeypot/foreground_elements/night_fungus02_l.svg');
+    --fungus02-r: url('https://supersecretbanana.com/honeypot/foreground_elements/night_fungus02_r.svg');
 
-    --grass-01-l: url('../../foreground_elements/day_grass01_l.svg');
-    --grass-01-r: url('../../foreground_elements/day_grass01_r.svg');
-    --grass-02-l: url('../../foreground_elements/day_grass02_l.svg');
-    --grass-02-r: url('../../foreground_elements/day_grass02_r.svg');
-    --grass-03-l: url('../../foreground_elements/day_grass03_l.svg');
-    --grass-03-r: url('../../foreground_elements/day_grass03_r.svg');
-    --grass-04-l: url('../../foreground_elements/day_grass04_l.svg');
-    --grass-04-r: url('../../foreground_elements/day_grass04_r.svg');
-    --grass-05-l: url('../../foreground_elements/day_grass05_l.svg');
-    --grass-05-r: url('../../foreground_elements/day_grass05_r.svg');
+    --grass-01-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_grass01_l.svg');
+    --grass-01-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_grass01_r.svg');
+    --grass-02-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_grass02_l.svg');
+    --grass-02-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_grass02_r.svg');
+    --grass-03-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_grass03_l.svg');
+    --grass-03-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_grass03_r.svg');
+    --grass-04-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_grass04_l.svg');
+    --grass-04-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_grass04_r.svg');
+    --grass-05-l: url('https://supersecretbanana.com/honeypot/foreground_elements/day_grass05_l.svg');
+    --grass-05-r: url('https://supersecretbanana.com/honeypot/foreground_elements/day_grass05_r.svg');
 
-    --night-grass-01-l: url('../../foreground_elements/night_grass01_l.svg');
-    --night-grass-01-r: url('../../foreground_elements/night_grass01_r.svg');
-    --night-grass-02-l: url('../../foreground_elements/night_grass02_l.svg');
-    --night-grass-02-r: url('../../foreground_elements/night_grass02_r.svg');
-    --night-grass-03-l: url('../../foreground_elements/night_grass03_l.svg');
-    --night-grass-03-r: url('../../foreground_elements/night_grass03_r.svg');
-    --night-grass-04-l: url('../../foreground_elements/night_grass04_l.svg');
-    --night-grass-04-r: url('../../foreground_elements/night_grass04_r.svg');
+    --night-grass-01-l: url('https://supersecretbanana.com/honeypot/foreground_elements/night_grass01_l.svg');
+    --night-grass-01-r: url('https://supersecretbanana.com/honeypot/foreground_elements/night_grass01_r.svg');
+    --night-grass-02-l: url('https://supersecretbanana.com/honeypot/foreground_elements/night_grass02_l.svg');
+    --night-grass-02-r: url('https://supersecretbanana.com/honeypot/foreground_elements/night_grass02_r.svg');
+    --night-grass-03-l: url('https://supersecretbanana.com/honeypot/foreground_elements/night_grass03_l.svg');
+    --night-grass-03-r: url('https://supersecretbanana.com/honeypot/foreground_elements/night_grass03_r.svg');
+    --night-grass-04-l: url('https://supersecretbanana.com/honeypot/foreground_elements/night_grass04_l.svg');
+    --night-grass-04-r: url('https://supersecretbanana.com/honeypot/foreground_elements/night_grass04_r.svg');
 }
 
 *{
