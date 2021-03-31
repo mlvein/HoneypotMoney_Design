@@ -1,5 +1,6 @@
 :root {
     --header: 'Work Sans', sans-serif;
+    --header-serif: 'Kiwi Maru', serif;
     --copy: 'Delius', cursive;
     --day-orange: #EF8620;
     --black: #111111;
@@ -258,11 +259,19 @@ p {
                 color: var(--day-orange);
                 text-align: center;
                 /* top: 8px; */
-                font-family: var(--copy);
-                font-size: 14px;
+                font-family: var(--header);
+                font-weight: 700;
+                font-size: 18px;
                 text-transform: uppercase;
                 letter-spacing: 0.1em;
                 line-height: 1.8em;
+            }
+
+            #status>span {
+                font-family: var(--header-serif);
+                font-weight: 500;
+                text-transform: none;
+                font-size: 14px;
             }
 
 #graphic {
@@ -768,6 +777,7 @@ p {
     .logo {
         position: relative;
         margin: 0 auto;
+        z-index: 2;
     }
 
     h2 {
