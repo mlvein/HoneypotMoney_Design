@@ -101,6 +101,7 @@ body {
     /* text-align: center; */
     align-self: flex-start;
     margin: 0 auto;
+    z-index: 2;
 }
 
 h1 {
